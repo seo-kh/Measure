@@ -1,24 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Measure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IY3-dQ-j0O">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </arscnView>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cq-IH-HNd" customClass="OpaqueButton" customModule="Measure" customModuleProvider="target">
+                                <rect key="frame" x="32" y="91" width="80" height="50"/>
+                                <color key="backgroundColor" red="0.94632961129268833" green="0.9463200194126431" blue="0.96841150522232056" alpha="0.48907844387755101" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Pi-eK-XIO"/>
+                                    <constraint firstAttribute="width" constant="80" id="sZf-An-AZQ"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.turn.up.left" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaw-SO-2aL" customClass="OpaqueButton" customModule="Measure" customModuleProvider="target">
+                                <rect key="frame" x="281" y="91" width="80" height="50"/>
+                                <color key="backgroundColor" red="0.94632961130000004" green="0.94632001939999999" blue="0.96841150519999997" alpha="0.48907844389999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="KIk-w6-IuM"/>
+                                    <constraint firstAttribute="height" constant="50" id="xGP-cu-FGa"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXa-wT-brp">
+                                <rect key="frame" x="146.66666666666666" y="688" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OUf-3Q-3wo"/>
+                                    <constraint firstAttribute="height" constant="100" id="iCz-cs-pWZ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus.circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="50" scale="large" weight="regular"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea3-qa-mln">
+                                <rect key="frame" x="301" y="708" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="JqU-md-hDz"/>
+                                    <constraint firstAttribute="height" constant="60" id="q4b-zH-S0X"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vO7-m8-dsu">
+                                <rect key="frame" x="311" y="718.33333333333337" width="40" height="39.333333333333371"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="abC-Mc-yHK"/>
+                                    <constraint firstAttribute="width" constant="40" id="hdG-2v-1sG"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="2" scale="small"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Cq-IH-HNd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="4hx-iN-gKX"/>
+                            <constraint firstItem="vO7-m8-dsu" firstAttribute="centerX" secondItem="ea3-qa-mln" secondAttribute="centerX" id="5Lt-k4-KWT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IY3-dQ-j0O" secondAttribute="trailing" id="Ah5-oZ-VO4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ea3-qa-mln" secondAttribute="trailing" constant="32" id="DrE-Lu-OhV"/>
+                            <constraint firstItem="ea3-qa-mln" firstAttribute="centerY" secondItem="tXa-wT-brp" secondAttribute="centerY" id="LN0-c7-xfO"/>
+                            <constraint firstItem="IY3-dQ-j0O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="O2C-dL-Wtc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vaw-SO-2aL" secondAttribute="trailing" constant="32" id="Rg2-7X-jY8"/>
+                            <constraint firstItem="vO7-m8-dsu" firstAttribute="centerY" secondItem="ea3-qa-mln" secondAttribute="centerY" id="WXV-t4-7KC"/>
+                            <constraint firstItem="vaw-SO-2aL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="XWj-EP-DJL"/>
+                            <constraint firstItem="IY3-dQ-j0O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZJ5-HE-mOm"/>
+                            <constraint firstAttribute="bottom" secondItem="IY3-dQ-j0O" secondAttribute="bottom" id="g7F-OG-Ngu"/>
+                            <constraint firstItem="tXa-wT-brp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hUa-8D-nZ6"/>
+                            <constraint firstItem="9Cq-IH-HNd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="lbI-ju-KKo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tXa-wT-brp" secondAttribute="bottom" constant="30" id="y05-bS-3Ws"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="9Cq-IH-HNd">
+            <size key="intrinsicContentSize" width="49.666666666666664" height="34.333333333333336"/>
+        </designable>
+        <designable name="vaw-SO-2aL">
+            <size key="intrinsicContentSize" width="64" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow.turn.up.left" catalog="system" width="128" height="99"/>
+        <image name="circle" catalog="system" width="128" height="123"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

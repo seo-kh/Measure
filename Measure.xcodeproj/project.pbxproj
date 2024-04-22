@@ -16,6 +16,7 @@
 		237D04392BD654400086082A /* MeasureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D04382BD654400086082A /* MeasureTests.swift */; };
 		237D04432BD654400086082A /* MeasureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D04422BD654400086082A /* MeasureUITests.swift */; };
 		237D04452BD654400086082A /* MeasureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D04442BD654400086082A /* MeasureUITestsLaunchTests.swift */; };
+		237D04532BD657310086082A /* OpaqueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237D04522BD657310086082A /* OpaqueButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		237D043E2BD654400086082A /* MeasureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeasureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		237D04422BD654400086082A /* MeasureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureUITests.swift; sourceTree = "<group>"; };
 		237D04442BD654400086082A /* MeasureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		237D04522BD657310086082A /* OpaqueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		237D04202BD6543F0086082A /* Measure */ = {
 			isa = PBXGroup;
 			children = (
+				237D04512BD656BC0086082A /* Components */,
 				237D04212BD6543F0086082A /* AppDelegate.swift */,
 				237D04232BD6543F0086082A /* SceneDelegate.swift */,
 				237D04252BD6543F0086082A /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				237D04442BD654400086082A /* MeasureUITestsLaunchTests.swift */,
 			);
 			path = MeasureUITests;
+			sourceTree = "<group>";
+		};
+		237D04512BD656BC0086082A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				237D04522BD657310086082A /* OpaqueButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237D04532BD657310086082A /* OpaqueButton.swift in Sources */,
 				237D04262BD6543F0086082A /* ViewController.swift in Sources */,
 				237D04222BD6543F0086082A /* AppDelegate.swift in Sources */,
 				237D04242BD6543F0086082A /* SceneDelegate.swift in Sources */,
@@ -368,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -445,18 +457,24 @@
 				DEVELOPMENT_TEAM = WPL7Q42L8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Measure/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlphaCircle.Measure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.Measure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,18 +491,24 @@
 				DEVELOPMENT_TEAM = WPL7Q42L8U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Measure/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AlphaCircle.Measure;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.Measure;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
